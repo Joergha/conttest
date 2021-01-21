@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  conttest:
+    image: joergha/conttest:latest
+    ports:
+      - "8080:8080"
