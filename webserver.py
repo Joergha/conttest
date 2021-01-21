@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 from http.server import HTTPServer as BaseHTTPServer, SimpleHTTPRequestHandler
 
 import socketserver
@@ -18,7 +17,7 @@ class MyRequestHandler(SimpleHTTPRequestHandler):
 
 
 Handler = MyRequestHandler
-server = socketserver.TCPServer(('0.0.0.0', 80), Handler)
+server = socketserver.TCPServer(('0.0.0.0', 8080), Handler)
 
 print("********************************************************")
 print("*                 sudoku solver server                 *")
