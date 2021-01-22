@@ -15,6 +15,7 @@ WORKDIR /app
 COPY . /app
 
 # Switching to a non-root user, please refer to https://aka.ms/vscode-docker-python-user-rights
+RUN chmod +x /app/webserver.py
 RUN useradd appuser && chown -R appuser /app
 USER appuser
 
